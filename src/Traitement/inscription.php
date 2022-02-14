@@ -1,9 +1,8 @@
 <?php
-session_start();
-require_once '../BDD/BDD.php'
+require_once '../BDD/BDD.php';
 
-
-$req=$bdd->prepare('SELECT * FROM client WHERE email like :email');
+$bdd = new BDD();
+$req=$bdd->setPdo()->prepare('SELECT * FROM client WHERE email like :email');
 $req->execute(array(
     'email'=>$_POST['email']
 
@@ -16,12 +15,11 @@ if($res){
 }
 else {
 
-    $requete = $bdd->prepare('INSERT INTO client (nom,prenom,mail,mot_de_passe) VALUES (:nom, :prenom,:mail,:mot_de_passe)');
+    $requete = $bdd->setPdo()->prepare('INSERT INTO client (nom,email,mot_de_passe) VALUES (:nom,:email,:mot_de_passe)');
     $requete->execute(array(
         'nom' => $_POST['nom'],
-        'prenom' => $_POST['prenom'],
-        'mot_de_passe' => $_POST['mot_de_passe'],
-        'mail' => $_POST['mail'],
+        'email' => $_POST['email'],
+        'mot_de_passe' => $_POST['mot_de_passe']
 
 
     ));
