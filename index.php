@@ -29,7 +29,7 @@
     <meta name="author" content="">
 
       <!-- fevicon -->
-      <!--<link rel="icon" href="images/fevicon.png" type="image/gif" /> -->
+      <link rel="icon" href="assets/images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
 
 
@@ -40,12 +40,14 @@
 
        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
    </head>
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-        <!-- <div class="loader"><img src="src/images/loading.gif" alt="#" /></div>-->
+         <div class="loader"><img src="assets/images/logo.png" alt="#" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -58,9 +60,9 @@
                      <div class="col-md-12">
                         <div class="header_information">
                            <ul>
-                              <li><img src="" alt=""/> Aéroport De Bourget</li>
-                              <li><img src="" alt=""/> +33 632014631</li>
-                              <li><img src="" alt=""/> Aeroport@bourget.fr</li>
+                              <li><img src="assets/images/1.png" alt=""/> Aéroport De Bourget</li>
+                              <li><img src="assets/images/2.png" alt=""/> +33 632014631</li>
+                              <li><img src="assets/images/3.png" alt=""/> Aeroport@bourget.fr</li>
                            </ul>
                         </div>
                      </div>
@@ -81,8 +83,8 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li class="active"> <a href="">Acceuil</a> </li>
-                                 <li><a href="contact">Contacter nous</a></li>
+                                 <li class="active"> <a href="inscritpion.html">Inscription</a> </li>
+                                 <li><a href="connexion.html">connexion</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -96,7 +98,7 @@
 
       <section >
          <div class="banner-main">
-            <img src="images/banner.jpg" alt=""/>
+            <img src="assets/images/banner.jpg" alt=""/>
             <div class="container">
                <div class="text-bg">
                   <h1>Sarcelles<br><strong class="white">Bourget travel</strong></h1>
@@ -131,6 +133,8 @@
                           </div>
                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                              <button class="form-control" type="submit">Inserer</button>
+                              <li class="active"> <a href="src/Traitement/update_vol.php.">update</a> </li>
+                              <li class="active"> <a href="src/Traitement/suppression_vol.php">suppresion</a> </li>
                           </div>
                        </div>
                     </form>

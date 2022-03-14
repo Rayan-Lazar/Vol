@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['name']) && isset($_POST['password']))
 {
   //connexion base de donnée
-    require_once '../BDD/BDD.php'
+    require_once '../BDD/BDD.php';
 
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
     // pour éliminer toute attaque de type injection SQL et XSS
